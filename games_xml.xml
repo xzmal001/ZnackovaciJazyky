@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings>
+	<gameInfo id="1">
+		<name>Doom</name>
+		<publisher>Bethesda</publisher>
+		<state>new</state>
+		<distribution region="CZ">
+			<digital>yes</digital>
+			<box>yes</box>
+		</distribution>
+		<distribution region="EU">
+			<digital>yes</digital>
+			<box>no</box>
+		</distribution>
+		<genre>action</genre>
+		<singleplayer>yes</singleplayer>
+		<multiplayer>yes</multiplayer>
+		<localization>English</localization>
+		<subtitles language="CZ" />
+		<platforms exclusive="false">
+			<PC>yes</PC>
+			<xone>yes</xone>
+			<x360>yes</x360>
+			<xKinect>no</xKinect>
+			<ps3>yes</ps3>
+			<ps4>yes</ps4>
+			<psMove>no</psMove>
+			<psVita>no</psVita>
+			<psVR>no</psVR>
+			<psMove>no</psMove>
+			<nintendo>no</nintendo>
+		</platforms>
+		<hwRequirements>
+			<processor>core 4, 2Ghz</processor>
+			<GPU>4GB, 1Ghz</GPU>
+			<RAM>8GB</RAM>
+			<HDD>75GB</HDD>
+			<internetConnection>yes</internetConnection>
+		</hwRequirements>
+		<pegiInfo forAdults="true">
+			<violence>yes</violence>
+			<badLanguage>yes</badLanguage>
+			<fear>no</fear>
+			<sex>no</sex>
+			<drugs>no</drugs>
+			<discrimination>no</discrimination>
+			<gambling>no</gambling>
+			<onlineGame>no</onlineGame>
+		</pegiInfo>
+		<edition>2016</edition>
+		<discount enabled="true">20%</discount>
+		<price currency="CZK">699</price>
+		<price currency="EUR">26</price>
+		<stock>yes</stock>
+		<atTheBranch city="Praha">yes</atTheBranch>
+		<atTheBranch city="Brno">no</atTheBranch>
+		<atTheBranch city="Ostrava">no</atTheBranch>
+		<bonusPack>no</bonusPack>
+		<rating min="0" max="10">9</rating>
+		<description>just Doom</description>
+		<preOwned>yes</preOwned>
+		<guarantee>2 years</guarantee>
+		<lastBuy unit="days">2</lastBuy>
+	</gameInfo>
+</settings>

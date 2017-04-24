@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Dokumentace - games</title>
+	</head>
+	<body>
+		<header>
+			<h1>Dokumentace - games</h1>
+		</header>
+
+		<nav id="menu">
+			<h2>Obsah</h2>
+			<ul>
+				<li><a href="#menu">Obsah s odkazy</a></li>
+				<li><a href="#uvod">Úvod</a></li>
+				<li><a href="#metodika">Metodika</a></li>
+				<li><a href="#elementy">Popis elementů a atributů</a></li>
+				<li><a href="#transformace">Popis transformace</a></li>
+				<li><a href="#zaver">Závěr</a></li>
+				<li><a href="#zapati">Zápatí</a></li>
+			</ul>
+		</nav>
+
+		<main>
+			<article>
+				<section id="uvod">
+					<h2>Úvod</h2>
+					<p>
+						V této semestrální práci na Značkovací jazyky bylo mým úkolem vytvořit XML dokument, XSD schéma a XSL transformaci do JSON pro nastavení internetové aplikace.
+					</p>
+				</section>
+
+				<section id="metodika">
+					<h2>Metodika</h2>
+					<p>Tento projekt vznikal v programu Sublime text 3. Nejprve jsem vytvořil XML dokument, ten jsem poté za pomoci nástroje freeformater přetransformoval do XSD schématu. Za pomoci stejného nástroje jsem vytvořil XSL transformaci do JSON.</p>
+				</section>
+
+				<section id="elementy">
+					<h2>Popis elementů a atributů</h2>
+
+					<table border="1">
+						<tr>
+							<th>Název elementu či atributu</th>
+							<th>Stručný popis</th>
+						</tr>
+						<tr>
+							<td>gameInfo</td>
+							<td>Verze hry pro kterou máme uložené nastavení</td>
+						</tr>
+						<tr>
+							<td>id</td>
+							<td>Atribut elementu gameInfo, který identifikuje hru.</td>
+						</tr>
+						<tr>
+							<td>name</td>
+							<td>Element name, obsahuje jméno hry.</td>
+						</tr>
+						<tr>
+							<td>publisher</td>
+							<td>Element publisher, obsahuje jméno vydavatele hry.</td>
+						</tr>
+						<tr>
+							<td>state</td>
+							<td>Element state, obsahuje stav hry.</td>
+						</tr>
+						<tr>
+							<td>distribution</td>
+							<td>Element distribution, popisuje v jakých verzích je pro daný region hra k dispozici</td>
+						</tr>
+						<tr>
+							<td>region</td>
+							<td>Atribut elementu distribution, obsahuje informaci pro který region je hra dostupná v daných verzích</td>
+						</tr>
+						<tr>
+							<td>digital</td>
+							<td>Potomek elementu distribution, který obsahuje informaci o dostupnosti digitální verze.</td>
+						</tr>
+						<tr>
+							<td>box</td>
+							<td>Potomek elementu distribution, který obsahuje informaci o dostupnosti krabicové verze.</td>
+						</tr>
+						<tr>
+							<td>genre</td>
+							<td>Element genre, obsahuje informaci o žánru hry</td>
+						</tr>
+						<tr>
+							<td>singleplayer</td>
+							<td>Element singleplayer, obsahuje možnost hry pro jednoho hráče</td>
+						</tr>
+						<tr>
+							<td>multiplayer</td>
+							<td>Element multiplayer, obsahuje možnost hry pro více hráčů</td>
+						</tr>
+						<tr>
+							<td>localization</td>
+							<td>Element localization, obsahuje informaci o lokalizaci hry</td>
+						</tr>
+						<tr>
+							<td>subtitles</td>
+							<td>Element subtitles, obsahuje informaci o titulcích</td>
+						</tr>
+						<tr>
+							<td>language</td>
+							<td>Atribut elementu subtitles, obsahuje jazyk titulků</td>
+						</tr>
+						<tr>
+							<td>platforms</td>
+							<td>Element platforms, obsahuje informaci o dostupnosti hry na různých platformách</td>
+						</tr>
+						<tr>
+							<td>exclusive</td>
+							<td>Atribut elementu platforms, obsahuje informaci o exkluzivitě hry</td>
+						</tr>
+						<tr>
+							<td>PC</td>
+							<td>Potomek elementu platforms, který obsahuje informaci o dostupnosti hry na PC.</td>
+						</tr>
+						<tr>
+							<td>xone</td>
+							<td>Potomek elementu platforms, který obsahuje informaci o dostupnosti hry na xbox one.</td>
+						</tr>
+						<tr>
+							<td>x360</td>
+							<td>Potomek elementu platforms, který obsahuje informaci o dostupnosti hry na xbox 360.</td>
+						</tr>
+						<tr>
+							<td>xKinect</td>
+							<td>Potomek elementu platforms, který obsahuje informaci o dostupnosti hry na xbox kinect.</td>
+						</tr>
+						<tr>
+							<td>ps3</td>
+							<td>Potomek elementu platforms, který obsahuje informaci o dostupnosti hry na ps3.</td>
+						</tr>
+						<tr>
+							<td>ps4</td>
+							<td>Potomek elementu platforms, který obsahuje informaci o dostupnosti hry na ps4.</td>
+						</tr>
+						<tr>
+							<td>psMove</td>
+							<td>Potomek elementu platforms, který obsahuje informaci o dostupnosti hry na psMove.</td>
+						</tr>
+						<tr>
+							<td>psVita</td>
+							<td>Potomek elementu platforms, který obsahuje informaci o dostupnosti hry na psVita.</td>
+						</tr>
+						<tr>
+							<td>psVR</td>
+							<td>Potomek elementu platforms, který obsahuje informaci o dostupnosti hry na psVR.</td>
+						</tr>
+						<tr>
+							<td>psMove</td>
+							<td>Potomek elementu platforms, který obsahuje informaci o dostupnosti hry na psMove.</td>
+						</tr>
+						<tr>
+							<td>nintendo</td>
+							<td>Potomek elementu platforms, který obsahuje informaci o dostupnosti hry na nintendo.</td>
+						</tr>
+						<tr>
+							<td>hwRequirements</td>
+							<td>Element hwRequirements, obsahuje informaci o HW nárocích hry</td>
+						</tr>
+						<tr>
+							<td>processor</td>
+							<td>Potomek elementu hwRequirements, který obsahuje informaci o procesoru</td>
+						</tr>
+						<tr>
+							<td>GPU</td>
+							<td>Potomek elementu hwRequirements, který obsahuje informaci o grafické kartě</td>
+						</tr>
+						<tr>
+							<td>RAM</td>
+							<td>Potomek elementu hwRequirements, který obsahuje informaci o RAM</td>
+						</tr>
+						<tr>
+							<td>HDD</td>
+							<td>Potomek elementu hwRequirements, který obsahuje informaci o HDD</td>
+						</tr>
+						<tr>
+							<td>internetConnection</td>
+							<td>Potomek elementu hwRequirements, který obsahuje informaci o nutnosti internetového připojení</td>
+						</tr>
+						<tr>
+							<td>pegiInfo</td>
+							<td>Element pegiInfo, obsahuje informace o přípustnosti hry pro mladistvé</td>
+						</tr>
+						<tr>
+							<td>violence</td>
+							<td>Potomek elementu pegiInfo, který obsahuje informaci o násilí</td>
+						</tr>
+						<tr>
+							<td>badLanguage</td>
+							<td>Potomek elementu pegiInfo, který obsahuje informaci o sprostých výrazech</td>
+						</tr>
+						<tr>
+							<td>fear</td>
+							<td>Potomek elementu pegiInfo, který obsahuje informaci o strachu</td>
+						</tr>
+						<tr>
+							<td>sex</td>
+							<td>Potomek elementu pegiInfo, který obsahuje informaci o sexu</td>
+						</tr>
+						<tr>
+							<td>drugs</td>
+							<td>Potomek elementu pegiInfo, který obsahuje informaci o drogách</td>
+						</tr>
+						<tr>
+							<td>discrimination</td>
+							<td>Potomek elementu pegiInfo, který obsahuje informaci o diskriminaci</td>
+						</tr>
+						<tr>
+							<td>gambling</td>
+							<td>Potomek elementu pegiInfo, který obsahuje informaci o gamblerství</td>
+						</tr>
+						<tr>
+							<td>onlineGame</td>
+							<td>Potomek elementu pegiInfo, který obsahuje informaci o online hraní</td>
+						</tr>
+						<tr>
+							<td>edition</td>
+							<td>Element edition, obsahuje informace o vydání hry</td>
+						</tr>
+						<tr>
+							<td>discount</td>
+							<td>Element discount, obsahuje informaci o slevě</td>
+						</tr>
+						<tr>
+							<td>enabled</td>
+							<td>Atribut elementu discount, obsahuje informaci o možnosti slevy</td>
+						</tr>
+						<tr>
+							<td>price</td>
+							<td>Element price, obsahuje informace o ceně</td>
+						</tr>
+						<tr>
+							<td>currency</td>
+							<td>Atribut elementu price, obsahuje informace o měně</td>
+						</tr>
+						<tr>
+							<td>stock</td>
+							<td>Element stock, obsahuje informace o dostupnosti</td>
+						</tr>
+						<tr>
+							<td>atTheBranch</td>
+							<td>Element atTheBranch, obsahuje informaci o dostupnosti v jednotlivých městech</td>
+						</tr>
+						<tr>
+							<td>city</td>
+							<td>Atribut elementu atTheBranch, obsahuje informaci o dostupnosti v daném městě</td>
+						</tr>
+						<tr>
+							<td>bonusPack</td>
+							<td>Element bonusPack, obsahuje informaci o bonusovém balení</td>
+						</tr>
+						<tr>
+							<td>rating</td>
+							<td>Element rating, obsahuje informace o hodnocení hry</td>
+						</tr>
+						<tr>
+							<td>min</td>
+							<td>Atribut elementu rating, obsahuje infomaci o minimálním hodnocení</td>
+						</tr>
+						<tr>
+							<td>max</td>
+							<td>Atribut elementu rating, obsahuje infomaci o maximálním hodnocení</td>
+						</tr>
+						<tr>
+							<td>description</td>
+							<td>Element description, obsahuje informace popisu hry</td>
+						</tr>
+						<tr>
+							<td>preOwned</td>
+							<td>Element preOwned, obsahuje informace o předobjednání hry</td>
+						</tr>
+						<tr>
+							<td>guarantee</td>
+							<td>Element guarantee, obsahuje informace o záruce hry</td>
+						</tr>
+						<tr>
+							<td>lastBuy</td>
+							<td>Element lastBuy, obsahuje informace o posledním nákupu hry</td>
+						</tr>
+						<tr>
+							<td>unit</td>
+							<td>Atribut elementu lastBuy, obsahuje informaci o časové jednotce</td>
+					</table>
+				</section>
+
+				<section id="transformace">
+					<h2>Popis transformace</h2>
+					<h3>JSON transformace</h3>
+					<p>Pro transformaci jsem použil nástroj freeformater a poté jsem dokumet dopisocal podle struktury XML</p>
+				</section>
+
+				<section id="zaver">
+					<h2>Závěr</h2>
+					<p>V této semestrální práci jsem se naučil základy XML a práci s nástroji sublime text a freeformater</p>
+				</section>
+			</article>
+		</main>
+
+		<footer id="zapati">
+			<hr>
+			<table>
+				<tr>
+					<td><a target="_blank" href="https://github.com/xzmal001/ZnackovaciJazyky">Github repozitář k této semestrální práci</a></td>
+				</tr>
+				<tr>
+					<td>Lukáš Zmatlík</td>
+				</tr>
+			</table>
+		</footer>
+	</body>
+</html>

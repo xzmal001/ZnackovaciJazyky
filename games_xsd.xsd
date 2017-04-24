@@ -1,0 +1,138 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="settings">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="gameInfo">
+          <xs:annotation>
+            <xs:documentation>game 1</xs:documentation>
+          </xs:annotation>
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="name"/>
+              <xs:element type="xs:string" name="publisher"/>
+              <xs:element type="xs:string" name="state"/>
+              <xs:element name="distribution" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="digital"/>
+                    <xs:element type="xs:string" name="box"/>
+                  </xs:sequence>
+                  <xs:attribute type="xs:string" name="region" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:string" name="genre"/>
+              <xs:element type="xs:string" name="singleplayer"/>
+              <xs:element type="xs:string" name="multiplayer"/>
+              <xs:element type="xs:string" name="localization"/>
+              <xs:element name="subtitles">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:string" name="language"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="platforms">
+                <xs:complexType>
+                  <xs:choice maxOccurs="unbounded" minOccurs="0">
+                    <xs:element type="xs:string" name="PC"/>
+                    <xs:element type="xs:string" name="xone"/>
+                    <xs:element type="xs:string" name="x360"/>
+                    <xs:element type="xs:string" name="xKinect"/>
+                    <xs:element type="xs:string" name="ps3"/>
+                    <xs:element type="xs:string" name="ps4"/>
+                    <xs:element type="xs:string" name="psMove"/>
+                    <xs:element type="xs:string" name="psVita"/>
+                    <xs:element type="xs:string" name="psVR"/>
+                    <xs:element type="xs:string" name="nintendo"/>
+                  </xs:choice>
+                  <xs:attribute type="xs:string" name="exclusive"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="hwRequirements">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="processor"/>
+                    <xs:element type="xs:string" name="GPU"/>
+                    <xs:element type="xs:string" name="RAM"/>
+                    <xs:element type="xs:string" name="HDD"/>
+                    <xs:element type="xs:string" name="internetConnection"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="pegiInfo">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="violence"/>
+                    <xs:element type="xs:string" name="badLanguage"/>
+                    <xs:element type="xs:string" name="fear"/>
+                    <xs:element type="xs:string" name="sex"/>
+                    <xs:element type="xs:string" name="drugs"/>
+                    <xs:element type="xs:string" name="discrimination"/>
+                    <xs:element type="xs:string" name="gambling"/>
+                    <xs:element type="xs:string" name="onlineGame"/>
+                  </xs:sequence>
+                  <xs:attribute type="xs:string" name="forAdults"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:short" name="edition"/>
+              <xs:element name="discount">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:string" name="enabled"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="price" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:short">
+                      <xs:attribute type="xs:string" name="currency" use="optional"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:string" name="stock"/>
+              <xs:element name="atTheBranch" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:string" name="city" use="optional"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:string" name="bonusPack"/>
+              <xs:element name="rating">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:byte">
+                      <xs:attribute type="xs:byte" name="min"/>
+                      <xs:attribute type="xs:byte" name="max"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:string" name="description"/>
+              <xs:element type="xs:string" name="preOwned"/>
+              <xs:element type="xs:string" name="guarantee"/>
+              <xs:element name="lastBuy">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:byte">
+                      <xs:attribute type="xs:string" name="unit"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute type="xs:byte" name="id"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
